@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://kit.fontawesome.com/8b1679ca39.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!--Header-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+            <div class="container">
+                <a class="navbar-brand">Fetch</a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynav"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="mynav">
+                    <ul class="navbar-nav ms-auto">
+                        <li><a class="nav-link" href="index.html"><i class="fa-solid fa-right-to-bracket"></i>&nbsp;signup</a></li>
+                        <li><a class="nav-link active" href="#"><i class="fa-solid fa-user"></i>&nbsp;login</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--Main-->
+    <div class="container form-container">
+        <div style="width: 25rem;" class="card p-3 text-center text-bg-info">
+            <div class="card-header mb-2">
+                <h1>LOGIN</h1>
+            </div>
+            <div class="card-body">
+                <form action="home.html" onsubmit="return login()" class="form-control">
+                    <input id="Username" class="form-control p-3" type="text" placeholder="UserName">
+                    <div id="error7"></div>
+                    <input  class="form-control p-3" type="password" id="password" placeholder="Password">
+                    <div id="error8"></div>
+                    <input id="Repassword" class="form-control p-3" type="password" placeholder="ReEnter Password">
+                    <div id="error9"></div>
+                    <button onsubmit="login()" class="btn btn-primary form-control">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</body>
+
+</html>

@@ -10,7 +10,7 @@ function update(res) {
     let cardlist = Object.entries(res)
     console.log(cardlist);
     for (i = 0; i < cardlist.length; i++) {
-        let cb = `<div style="width:18rem" class="card m-3"><div class="card-header text-center text-bg-primary"><span style="font-weight: bold">NO:</span>${cardlist[i][0]}<br><span style="font-weight: bold">ID:</span>${cardlist[i][1].id}<br><h3><i class="fa-solid fa-user"></i>&nbsp;NAME</h3>${cardlist[i][1].name}</div><div class="card-body text-center text-bg-info"><h3>BODY</h3>${cardlist[i][1].body}</div><div class="card-footer text-center text-bg-primary"<span style="font-weight: bold">EMAIL:</span>${cardlist[i][1].email}</div></div></div>`
+        let cb = `<div style="width:18rem" class="card m-3"><div class="card-header text-center text-bg-primary"><h3><i class="fa-solid fa-user"></i>&nbsp;NAME</h3>${cardlist[i][1].name}</div><div class="card-body text-center text-bg-info"><h3>BODY</h3>${cardlist[i][1].body}</div><div class="card-footer text-center text-bg-primary"<span style="font-weight: bold">EMAIL:</span>${cardlist[i][1].email}</div></div></div>`
         card.innerHTML += cb
     }
 }
@@ -80,6 +80,40 @@ function validate(){
          return false
       }else{
         alert("Register Successfully you Redirect To Login Page")
-      }
-    
+      } 
+}
+
+//login validation
+
+let Username = document.getElementById("Username")
+let password = document.getElementById("password")
+let Repassword = document.getElementById("Repassword")
+let error7 = document.getElementById("error7")
+let error8 = document.getElementById("error8")
+let error9 = document.getElementById("error9")
+
+function login(){
+    var cPass = document.getElementById("cPass");
+  if(Username.value == ""){
+    error7.textContent = "Enter Your UserName"
+    return false;
+  }
+  if(password.value=="" ){
+    error7.textContent=""
+    error8.textContent = "Enter your Password"
+    return false;
+  }else if(password.value.length<=7){
+    error8.textContent = "Password Must Contain 8 charactors"
+    return false
+  }
+  if(Repassword.value == ""){
+    error8.textContent=""
+    error9.textContent = "Confirm your Password"
+    return false
+  }else if (Repassword.value !== password.value){
+    error9.textContent = "Password Not Match"
+    return false
+  }else{
+    alert("Login Successfully You Redirecting On Api-Data-Page")
+  }
 }

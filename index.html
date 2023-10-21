@@ -6,17 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>signUp</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/8b1679ca39.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+            <div class="container">
+                <a class="navbar-brand">Fetch</a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mynav"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="mynav">
+                    <ul class="navbar-nav ms-auto">
+                        <li><a class="nav-link active" href="#"><i class="fa-solid fa-right-to-bracket"></i>&nbsp;signup</a></li>
+                        <li><a class="nav-link" href="login.html"><i class="fa-solid fa-user"></i>&nbsp;login</a></li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
     <div class="container form-container">
         <div style="width: 25rem;" class="card d-flex">
             <div class="card-header text-bg-primary text-center">
                 <h1>Register</h1>
             </div>
             <div class="card-body">
-            <form action="home.html" onsubmit="return validate()" class="form-control">
+            <form action="login.html" onsubmit="return validate()" class="form-control">
                 <label class="label-brand" for="fname">FirstName</label>
                 <input id="fname" class="form-control" type="text" placeholder="Enter Your FirstName">
                 <div id="error1"></div>
