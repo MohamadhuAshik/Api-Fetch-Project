@@ -87,10 +87,9 @@ function validate(){
 
 let Username = document.getElementById("Username")
 let password = document.getElementById("password")
-let Repassword = document.getElementById("Repassword")
 let error7 = document.getElementById("error7")
 let error8 = document.getElementById("error8")
-let error9 = document.getElementById("error9")
+
 
 function login(){
     var cPass = document.getElementById("cPass");
@@ -106,14 +105,7 @@ function login(){
     error8.textContent = "Password Must Contain 8 charactors"
     return false
   }
-  if(Repassword.value == ""){
-    error8.textContent=""
-    error9.textContent = "Confirm your Password"
-    return false
-  }else if (Repassword.value !== password.value){
-    error9.textContent = "Password Not Match"
-    return false
-  }else{
+  else{
     alert(`${Username.value} Login Successfully You Redirecting On Api-Data-Page`)
   }
 }

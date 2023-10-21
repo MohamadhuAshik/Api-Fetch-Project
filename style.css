@@ -16,3 +16,9 @@
    rgba(150,41,230,0.95));
    z-index: -1; 
 }
+.card-body form div{
+  color: red;
+}
+.input{
+  background-color: red;
+}
