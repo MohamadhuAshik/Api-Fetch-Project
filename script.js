@@ -79,7 +79,7 @@ function validate(){
         error6.textContent = "Password Not Match "
          return false
       }else{
-        alert("Register Successfully you Redirect To Login Page")
+        alert(`${fname.value}  Register Successfully you Redirect on Login Page`)
       } 
 }
 
@@ -114,6 +114,6 @@ function login(){
     error9.textContent = "Password Not Match"
     return false
   }else{
-    alert("Login Successfully You Redirecting On Api-Data-Page")
+    alert(`${Username.value}Login Successfully You Redirecting On Api-Data-Page`)
   }
 }
