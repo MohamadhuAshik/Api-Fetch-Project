@@ -36,28 +36,28 @@
             <form action="login.html" onsubmit="return validate()" class="form-control">
                 <label class="label-brand" for="fname">FirstName</label>
                 <input id="fname" class="form-control" type="text" placeholder="Enter Your FirstName">
-                <div id="error1"></div>
+                <div class="error" id="error1"></div>
                 <label class="label-brand" for="lname">LastName</label>
                 <input id="lname" class="form-control" type="text" placeholder="Enter Your LastName">
-                <div id="error2"></div>
+                <div class="error" id="error2"></div>
                 <div class="row">
                     <div class="col-sm-6">
                         <label class="label-brand" for="mobile">Mobile</label>
                         <input id="mobile" class="form-control" type="number" placeholder="Enter Your Number">
-                        <div id="error3"></div>
+                        <div class="error" id="error3"></div>
                     </div>
                     <div class="col-sm-6">
                         <label class="label-brand" for="email">Email</label>
                         <input id="email" class="form-control" type="email" placeholder="Enter Your Email-ID">
-                        <div id="error4"></div>
+                        <div class="error" id="error4"></div>
                     </div>
                 </div>
                 <label for="password">Create Password</label>
                 <input id="newPass" type="password" class="form-control" placeholder="Create Your New Password">
-                <div id="error5"></div>
+                <div class="error" id="error5"></div>
                 <label for="password">Confirm Password</label>
                 <input id="conPass" type="password" class="form-control" placeholder="Confirm your Password">
-                <div id="error6"></div>
+                <div class="error" id="error6"></div>
                 <br>
                 <button onclick="validate()" class="btn btn-primary form-control">Submit</button>
             </form>
